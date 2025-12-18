@@ -1,0 +1,181 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #111;
+  background: #f6f7fb;
+}
+
+/* Layout helpers */
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Header + Nav */
+.header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8ee;
+}
+
+.nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 14px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav__logo {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.nav__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: #111;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.nav__links a:hover {
+  background: #eef0ff;
+}
+
+/* Hero */
+.hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 80px 20px 40px;
+
+  text-align: left;
+}
+
+.hero__title {
+  margin: 0 0 10px;
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.hero__text {
+  margin: 0 0 22px;
+  font-size: 18px;
+  color: #444;
+  max-width: 60ch;
+}
+
+.hero__button {
+  display: inline-block;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 12px;
+}
+
+.hero__button:hover {
+  opacity: 0.9;
+}
+
+/* Skills list */
+.skills {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills li {
+  background: #ffffff;
+  border: 1px solid #e8e8ee;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Projects grid */
+.projects {
+  margin-top: 18px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e8e8ee;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.project-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.project-card p {
+  margin: 0;
+  color: #444;
+}
+
+/* Contact links */
+#contact a {
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  padding: 28px 20px;
+  text-align: center;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .hero__title {
+    font-size: 36px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}

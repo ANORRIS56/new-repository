@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drew | Personal Site</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header class="header">
+      <nav class="nav">
+        <h1 class="nav__logo">Drew</h1>
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h2 class="hero__title">Hi, I’m Drew 👋</h2>
+      <p class="hero__text">
+        I’m learning web development and building projects step by step.
+      </p>
+      <a href="#projects" class="hero__button">View My Work</a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m focused on improving my skills in HTML, CSS, and JavaScript. I enjoy
+        learning by building real projects and solving problems.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git & GitHub</li>
+        <li>Basic JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>A simple landing page built with HTML and CSS.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>A responsive layout using Flexbox.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project Three</h3>
+          <p>JavaScript basics and DOM manipulation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email me at:</p>
+      <a href="mailto:drew@email.com">drew@email.com</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© <span id="year"></span> Drew. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
